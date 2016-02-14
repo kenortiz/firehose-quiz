@@ -6,6 +6,14 @@ h1 {
   text-align: center;
 }
 
+#answer-box.jumbotron {
+  padding: 3px;
+}
+
+#answer-box.jumbotron p {
+  font-size: 18px;
+}
+
 .navbar.navbar-inverse {
 	border-radius: 0;
 }

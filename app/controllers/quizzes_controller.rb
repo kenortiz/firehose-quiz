@@ -1,7 +1,7 @@
 class QuizzesController < ApplicationController
 
   def index
-    @quiz = Quiz.all
+    @quiz = Quiz.find( :all, :order => "id DESC" )
   end
 
   def create

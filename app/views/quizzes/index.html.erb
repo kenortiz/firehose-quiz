@@ -1,4 +1,6 @@
-<div class="col-xs-8 col-xs-offset-2 jumbotron">
-  <h2>This is an answer.</h2>
-
-</div>
+<% @quiz.each do |quiz| %>
+  <div id="answer-box" class="col-xs-8 col-xs-offset-2 jumbotron" >
+    <h2><%= quiz.answer %></h2>
+    <p>Submitted by: <%= quiz.name %></p>
+  </div>
+<% end %>
